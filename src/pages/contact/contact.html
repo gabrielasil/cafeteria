@@ -1,17 +1,29 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Contato
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+    <ion-list>
+
+        <ion-item>
+          <ion-input type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="password" placeholder="E-mail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="password" placeholder="Mensagem"></ion-input>
+          </ion-item>
+      
+      </ion-list>
+
+      <div padding>
+          <button ion-button color="primary" block (click)="enviarMensagem()">ENVIAR</button>
+        </div>
 </ion-content>
